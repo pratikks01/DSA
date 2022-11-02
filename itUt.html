@@ -219,7 +219,7 @@
 
 		<br />
 
-		<form>
+		<form action="demo.html" method="post">
 			<table>
 				<tr>
 					<td>First name:</td>
@@ -237,15 +237,14 @@
 					<td>Gender:</td>
 					<td><input type="radio" name="Gender" />Male</td>
 					<td><input type="radio" name="Gender" />Female</td>
-					<td><input type="radio" name="Gender" />Other</td>
 				</tr>
 
 				<tr>
-					<td>Phone Number</td>
+					<td>Phone</td>
 					<td>
 						<select>
-							<option>India +91</option>
-							<option>USA +1</option>
+							<option value="India">India +91</option>
+							<option selected>USA +1</option>
 							<option>UK +44</option>
 						</select>
 						<input type="phone" placeholder="98504215**" name="" />
@@ -257,6 +256,19 @@
 				</tr>
 				<tr>
 					<td><input type="submit" value="submit" name="" /></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea name="message" rows="10" cols="30">
+							The cat was playing in the garden.
+						</textarea
+						>
+					</td>
+					<td>
+						<button type="button" onclick="alert('Hello World!')">
+							Click Me!
+						</button>
+					</td>
 				</tr>
 			</table>
 		</form>
